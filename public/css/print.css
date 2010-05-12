@@ -1,0 +1,36 @@
+body{
+margin: 0; 
+padding: 0;
+background: #fff;
+}
+
+
+.clear:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;} .clear {display: inline-block;} /* Hides from IE-mac \*/ * html .clear {height: 1%;} .clear {display: block;} /* End hide from IE-mac */ 
+
+#wrapper{text-align: left;
+}
+#path{display:none}
+#header{height: 105px;
+background: #fff url(../images/championships/logo.jpg) 100% 0 no-repeat;}
+		
+#hero{display:none}
+.level1 #hero{display:none}
+.level2 #hero {display:none}
+	
+#nav{display:none}
+#column{display:none}
+#subnav{display:none}			
+#contentarea{border-left: solid 0px; min-height: 22em;margin:0;padding:0;}
+#headerlinks{display:none}
+#search{display:none}
+#content{}
+.level2 #content{float:left;width:450px;padding:15px 0 20px 20px; font-size:12px}
+		
+h1#pagetitle{
+	font-size:14px;
+	color:#000000;
+	line-height:1.2em;
+	font-weight:bold;
+	margin:0 0 20px 0;
+}
+		
