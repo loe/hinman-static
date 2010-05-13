@@ -23,7 +23,7 @@ a:hover{color:#728FAF;}
 	top:10px;
 	right:0;
 	color:#dfdfdf;
-	width: 575px;
+	width: 535px;
 }
 			#headerlinks ul{margin:0;padding:0;list-style:none;}
 			#headerlinks ul li{margin:0;padding:0;float:left;}
@@ -86,7 +86,7 @@ color(hover):#CCCCCC;	font-size:12px;
 	font-weight:bold;
 	position:relative;
 	z-index:2;
-	text-align:center;
+	text-align:left;
 	background-color: #1E3062;
 }
 		#nav ul{
@@ -111,6 +111,7 @@ color(hover):#CCCCCC;	font-size:12px;
 		#nav ul li div{display:inline;}
 		#nav ul li a{color:#fff;text-decoration:none;}
 		#nav ul li a:hover{color:#728FAF;}
+		#nav ul li a:visited {color:#fff;}
 		
 		/* Level 1 */
 		#nav ul li div a {padding:0 10px}
@@ -119,6 +120,7 @@ color(hover):#CCCCCC;	font-size:12px;
 		#nav ul li ul{display:none;margin:0;position: absolute;background: #a5a3a4;width: 180px;border-top:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;left: -999em;}
 		#nav ul li ul li a{color:#fff;border-bottom:1px solid #ffffff;width:160px;padding:6px 10px;text-indent:0;}
 		#nav ul li ul li a:hover{background: #fff;color:#666666}
+		#nav ul li ul li a:visited {color:#fff;}
 		
 	
 		/* Level 3 */
@@ -286,7 +288,7 @@ color(hover):#CCCCCC;	font-size:12px;
 	font-size:10px;
 	clear:both;
 	background-color: #1E3062;
-	height: 60px;
+	height: 70px;
 	margin-top: 1px;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -338,3 +340,5 @@ margin:0;padding:2px;float:left}
 
 #leftnav
 {padding-left:20px;}
+
+#sycburgee {}
