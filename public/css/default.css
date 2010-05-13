@@ -16,7 +16,7 @@ a:hover{color:#728FAF;}
 
 	#header{position:relative;padding:0 0 20px 0}
 		
-		#logo{}
+		#logo{padding: 20px 0 0 0;}
 		
 		#headerlinks{
 	position:absolute;
@@ -298,6 +298,15 @@ color(hover):#CCCCCC;	font-size:12px;
 		#footer a{color:#cccccc;}
 		#footer a:hover{color:#999999}
 		
+#SponsorLogos {
+	position: relative;
+	width: 770px;
+	margin-bottom: 5px;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #footerlinks {
 	position: relative;
 	width: 700px;
