@@ -302,7 +302,7 @@ color(hover):#CCCCCC;	font-size:12px;
 		
 #SponsorLogos {
 	position: relative;
-	width: 770px;
+	width: 670px;
 	margin-bottom: 5px;
 	float: center;
 	margin-right: auto;
@@ -340,5 +340,7 @@ margin:0;padding:2px;float:left}
 
 #leftnav
 {padding-left:20px;}
+
+#leftnav ul li {padding-top:4px;}
 
 #sycburgee {}

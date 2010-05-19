@@ -6,9 +6,24 @@
 <link href="css/PageTypes.css" rel="stylesheet" type="text/css" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
 <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAAYwcIVzQ82F778YUn9b3vhQUbbq_1EdrQ84I0z8mNZv4CmEVqBTb1qZgHkbC4v8kLjR6_lEF7lVqxg&amp;sensor=true"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map_canvas"));
+        map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+        map.setUIToDefault();
+      }
+    }
+
+    </script>
+
 </head>
 
-<body class="level2">
+<body class="level2" onload="initialize()" onunload="GUnload()">
 
 <div id="wrapper">
 
@@ -54,8 +69,10 @@
 			
 			<span id="leftnav">
 				<ul>
-					<li><a href="travel.html">Travel Home</a></li>
-					<li><a href="hotels.html">Hotels</a></li>
+					<li><a href="http://championships.ussailing.org/Assets/Championships/USTRC/2010/2010NOR.pdf" target="_blank">NOR</a></li>
+					<li><a href="https://www.regattanetwork.com/clubmgmt/applet_registration_form.php?regatta_id=2969" target="_blank">Event Application</a></li>
+					<li><a href="venue.html">The venue</a></li>
+					<li><a href="boatsales.html">Event boat sales</a></li>
 				</ul>
 			</span>
 		
@@ -64,9 +81,12 @@
 		<div id="content">
 			<div style="float:right; clear:none; padding-right:0px;"><img src="images/HinmanLogoRevised.gif"/>
 				</div>
-				<strong><h3>Hotels</h3></strong><br/><br/>
-				We've worked with the <a href="http://www.marriott.com/hotels/travel/seacd-courtyard-seattle-downtown-lake-union/" target="blank">Marriott Courtyard</a> across the street from the event venue for $89/night rooms. Call up the Marriott to reserve your rooms and tell them you're in town for the Hinman and they'll take care of your rate. Limited to 30 rooms total so call up to reserve yours now.<br/>
-			
+				<strong><h3>The Venue</h3></strong><br/><br/>
+				Founded in 1892, <a href="http://www.seattleyachtclub.org/default.aspx?p=DynamicModule&amp;pageid=286506&amp;ssid=166318&amp;vnf=1" target="_blank">Seattle Yacht Club (SYC)</a> is located on Portage Bay, just off of Lake Washington in the center of Seattle. 
+				<br/><br/><strong>Racing Venue</strong><br/>
+				The event will be raced at the south end of Lake Union out of the <a href="http://www.cwb.org/" target="_blank">Center for Wooden Boats</a>. The race course is in the shadow of Seattle's Space Needle and is just minutes from SYC. Lake Union is just shy of 2 miles long and .75 miles wide. The lake is oriented north and south, the same as the two most common Seattle wind directions. <br/> <br/> <br/>
+				<!--><div id="map_canvas" style="width: 500px; height: 300px"></div>-->
+			<iframe width="425" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=113117169427697418077.000486ec5142850211a56&amp;ll=47.639601,-122.327099&amp;spn=0.057832,0.072956&amp;z=13&amp;output=embed"></iframe><br /><small>View <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=113117169427697418077.000486ec5142850211a56&amp;ll=47.639601,-122.327099&amp;spn=0.057832,0.072956&amp;z=13&amp;source=embed" style="color:#0000FF;text-align:left">US Team Racing Champs 2010</a> in a larger map</small>
 		</div>	
 	
 	</div>
