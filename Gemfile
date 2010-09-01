@@ -1,3 +1,13 @@
-source :gemcutter
+source 'http://rubygems.org/'
 
-gem 'rack'
+gem 'sinatra'
+
+group :development do
+  gem 'shotgun'
+  gem 'thin'
+end
+
+group :test do
+  gem 'rack-test'
+  gem 'fakeweb'
+end

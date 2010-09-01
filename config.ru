@@ -1,2 +1,11 @@
-use Rack::Static, :urls => [/\/.+/], :root => 'public'
-run Proc.new {|env| [200, {'Content-Type' => 'text/html', 'Cache-Control' => 'public, max-age=86400'}, ::File.open('public/index.html', 'r')]}
+require 'rubygems'
+require 'bundler'
+Bundler.setup
+
+$LOAD_PATH << 'lib'
+
+require 'hinman-static'
+
+use Rack::Static, :urls => ['/css', '/images'], :root => 'public'
+use Rack::ETag
+run HinmanStatic
