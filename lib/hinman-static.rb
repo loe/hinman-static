@@ -1,7 +1,10 @@
 require 'rubygems'
 require 'sinatra/base'
+require 'sinatra/content_for'
 
 class HinmanStatic < Sinatra::Base
+  
+  helpers Sinatra::ContentFor
   
   get '/' do
     erb :index

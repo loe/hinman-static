@@ -4,6 +4,10 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
+  sinatra-content-for: 
+    group: 
+    - :default
+    version: ">= 0"
   thin: 
     group: 
     - :development
@@ -35,9 +39,11 @@ specs:
     version: "0.8"
 - sinatra: 
     version: "1.0"
+- sinatra-content-for: 
+    version: "0.2"
 - thin: 
     version: 1.2.7
-hash: 6cc6b5994f8b6889753514fad748ccd2fe502597
+hash: 8c7bd895377e2770231ab7a2145a94af5903c0a7
 sources: 
 - Rubygems: 
     uri: http://rubygems.org/
