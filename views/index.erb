@@ -24,4 +24,34 @@ September 30 - <br/>October 3, 2010
 Venue: <a href="http://www.cwb.org/" target="blank">Center for Wooden Boats</a> <br/>
 More information: <a href="mailto:hinman2010@gmail.com">Contact Us</a> <br/>
 <br/>
-<!-- <fb:like-box profile_id="154033821274122" width="425"></fb:like-box> -->
+
+<fb:like-box profile_id="154033821274122" width="425"></fb:like-box>
+
+<% content_for :javascript %>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId  : '154033821274122',
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml  : true  // parse XFBML
+  });
+
+  FB.Event.subscribe('auth.sessionChange', function(response) {
+    console.log('firing sessionChange');
+    window.location.reload();
+  });
+
+};
+
+(function() {
+  var s = document.createElement('div'); 
+  s.setAttribute('id','fb-root'); 
+  document.documentElement.getElementsByTagName("body")[0].appendChild(s);
+  var e = document.createElement('script');
+  e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+  e.async = true;
+  s.appendChild(e);
+  }());
+</script>
+<% end %>

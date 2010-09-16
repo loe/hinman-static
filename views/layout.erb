@@ -113,33 +113,6 @@
 	
 </div>
 
-<script> 
-window.fbAsyncInit = function() {
-  FB.init({
-    appId  : '154033821274122',
-    status : true, // check login status
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml  : true  // parse XFBML
-  });
-
-  FB.Event.subscribe('auth.sessionChange', function(response) {
-    console.log('firing sessionChange');
-    window.location.reload();
-  });
-
-};
-
-(function() {
-  var s = document.createElement('div'); 
-  s.setAttribute('id','fb-root'); 
-  document.documentElement.getElementsByTagName("body")[0].appendChild(s);
-  var e = document.createElement('script');
-  e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-  e.async = true;
-  s.appendChild(e);
-  }());
-</script> 
-
 <script type="text/javascript"> 
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -150,5 +123,7 @@ var pageTracker = _gat._getTracker("UA-12640078-2");
 pageTracker._trackPageview();
 } catch(err) {}
 </script>
+
+<% yield_content :javascript %>
 </body>
 </html>
