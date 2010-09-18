@@ -29,4 +29,17 @@ class HinmanStatic < Sinatra::Base
   get '/schedule' do
     erb :schedule
   end
+  
+  get '/parking' do
+    erb :parking
+  end
+  
+  get '/meals' do
+    erb :meals
+  end
+  
+  get '/weather' do
+    erb :weather
+  end
+  
 end
