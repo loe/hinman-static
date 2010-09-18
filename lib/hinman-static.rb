@@ -25,4 +25,8 @@ class HinmanStatic < Sinatra::Base
   get '/venue' do
     erb :venue
   end
+  
+  get '/schedule' do
+    erb :schedule
+  end
 end
