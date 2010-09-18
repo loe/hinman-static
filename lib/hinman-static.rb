@@ -42,4 +42,6 @@ class HinmanStatic < Sinatra::Base
     erb :weather
   end
   
+
+  
 end

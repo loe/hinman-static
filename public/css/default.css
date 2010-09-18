@@ -13,6 +13,16 @@ a:hover{color:#728FAF;}
 .padded {cellpadding:2px 0px 2px 0px;}
 .padded td {padding-left:6px;}
 
+#SponsorLogos2 {
+	position: relative;
+	width: 535px;
+	margin-bottom: 5px;
+	margin-top:50px;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:right;
+}
 
 
 
@@ -310,11 +320,12 @@ color(hover):#CCCCCC;	font-size:12px;
 		
 #SponsorLogos {
 	position: relative;
-	width: 670px;
+	width: 960px;
 	margin-bottom: 5px;
 	float: center;
 	margin-right: auto;
 	margin-left: auto;
+	text-align:center;
 }
 
 #footerlinks {
