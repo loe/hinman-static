@@ -5,7 +5,11 @@ require 'sinatra/content_for'
 class HinmanStatic < Sinatra::Base
   
   helpers Sinatra::ContentFor
-  
+
+  before do
+    expires 600, :public
+  end
+
   get '/' do
     erb :index
   end
@@ -41,7 +45,5 @@ class HinmanStatic < Sinatra::Base
   get '/weather' do
     erb :weather
   end
-  
-
   
 end
