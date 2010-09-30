@@ -6,6 +6,10 @@ class HinmanStatic < Sinatra::Base
   
   helpers Sinatra::ContentFor
   
+  before do
+    expires 600, :public
+  end
+  
   get '/' do
     erb :index
   end
