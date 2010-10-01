@@ -45,5 +45,9 @@ class HinmanStatic < Sinatra::Base
   get '/weather' do
     erb :weather
   end
+
+  get '/video' do
+    erb :video
+  end
   
 end
