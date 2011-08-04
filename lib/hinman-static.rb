@@ -10,7 +10,11 @@ class HinmanStatic < Sinatra::Base
     expires 600, :public
   end
 
+  get '/' do
+    erb(:index)
+  end
+
   get '/:page' do |page|
-    erb page || :index
+    erb(page.to_sym)
   end
 end
