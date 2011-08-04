@@ -10,44 +10,7 @@ class HinmanStatic < Sinatra::Base
     expires 600, :public
   end
 
-  get '/' do
-    erb :index
+  get '/:page' do |page|
+    erb page || :index
   end
-  
-  get '/boatsales' do
-    erb :boatsales
-  end
-  
-  get '/hotels' do
-    erb :hotels
-  end
-  
-  get '/travel' do
-    erb :travel
-  end
-  
-  get '/venue' do
-    erb :venue
-  end
-  
-  get '/schedule' do
-    erb :schedule
-  end
-  
-  get '/parking' do
-    erb :parking
-  end
-  
-  get '/meals' do
-    erb :meals
-  end
-  
-  get '/weather' do
-    erb :weather
-  end
-
-  get '/video' do
-    erb :video
-  end
-  
 end
