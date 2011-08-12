@@ -6,6 +6,6 @@ $LOAD_PATH << 'lib'
 
 require 'hinman-static'
 
-use Rack::Static, :urls => ['/css', '/images'], :root => 'public'
+use Rack::Static, :urls => ['/css', '/docs', '/images'], :root => 'public'
 use Rack::ETag
 run HinmanStatic
