@@ -2,6 +2,7 @@ source 'http://rubygems.org/'
 
 gem 'sinatra'
 gem 'sinatra-content-for'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'shotgun'
